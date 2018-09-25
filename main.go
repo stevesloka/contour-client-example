@@ -25,9 +25,7 @@ func init() {
 func main() {
 	contourClient := newClient(kubeconfig, inCluster)
 	routes, err := contourClient.ContourV1beta1().IngressRoutes("default").List(metav1.ListOptions{})
-	if err != nil {
-		fmt.Println("Fail! ", err)
-	}
+	check(err)
 
 	for _, v := range routes.Items {
 		fmt.Println("Got Routes: ", v)
