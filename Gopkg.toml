@@ -1,7 +1,6 @@
 [[constraint]]
   name = "github.com/heptio/contour"
-  branch = "moveCRDClient"
-  source = "github.com/stevesloka/contour"
+  branch = "master"
 
 [prune]
   go-tests = true

@@ -63,7 +63,7 @@
   version = "v0.2.0"
 
 [[projects]]
-  branch = "moveCRDClient"
+  branch = "master"
   digest = "1:f2c25fadc09816004e0fa50088e9ed61d09fc0e714b9fabce124edc57609f379"
   name = "github.com/heptio/contour"
   packages = [
@@ -73,8 +73,7 @@
     "apis/generated/clientset/versioned/typed/contour/v1beta1",
   ]
   pruneopts = "UT"
-  revision = "0b9b37d89944e5b80d66ceb62a23f5b9c0f84a69"
-  source = "github.com/stevesloka/contour"
+  revision = "7028ca9c86e204263f63219d5a3efc035493e520"
 
 [[projects]]
   branch = "master"
@@ -318,6 +317,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/heptio/contour/apis/generated/clientset/versioned",
+    "k8s.io/apimachinery/pkg/apis/meta/v1",
     "k8s.io/client-go/rest",
     "k8s.io/client-go/tools/clientcmd",
   ]
